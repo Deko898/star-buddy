@@ -15,11 +15,55 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "accessToken": "NjA1MzIwYzgtNmE1OC00NmQ2LWFiZTktZTg5YTc2YWM0YmJifHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "star-buddy": {
+      "tags": []
+    },
+    "star-buddy-e2e": {
+      "tags": [],
+      "implicitDependencies": ["star-buddy"]
+    },
+    "api": {
+      "tags": []
+    },
+    "auth": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
+    },
+    "layout": {
+      "tags": []
+    },
+    "feed": {
+      "tags": []
+    },
+    "utils": {
+      "tags": []
+    },
+    "api-auth": {
+      "tags": []
+    },
+    "common": {
+      "tags": []
+    },
+    "socket-io": {
+      "tags": []
+    },
+    "room": {
+      "tags": []
+    },
+    "chat": {
+      "tags": []
+    }
+  }
 }

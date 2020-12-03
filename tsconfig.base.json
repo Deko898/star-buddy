@@ -8,14 +8,25 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2017",
     "module": "esnext",
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@star-buddy/auth": ["libs/auth/src/index.ts"],
+      "@star-buddy/material": ["libs/material/src/index.ts"],
+      "@star-buddy/layout": ["libs/layout/src/index.ts"],
+      "@star-buddy/feed": ["libs/feed/src/index.ts"],
+      "@star-buddy/utils": ["libs/utils/src/index.ts"],
+      "@star-buddy/api-auth": ["libs/api-auth/src/index.ts"],
+      "@star-buddy/common": ["libs/common/src/index.ts"],
+      "@star-buddy/socket-io": ["libs/socket-io/src/index.ts"],
+      "@star-buddy/room": ["libs/room/src/index.ts"],
+      "@star-buddy/chat": ["libs/chat/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,7 @@
+<app-layout>
+    <router-outlet></router-outlet>
+    <input #inputRef/>
+    <button (click)="sendMsgToServer(inputRef.value)">Send</button>  
+
+    <button (click)="joinRoom('3d0e1dfd-125b-4574-88ee-fd40990db5a7')">Join room</button>
+</app-layout>

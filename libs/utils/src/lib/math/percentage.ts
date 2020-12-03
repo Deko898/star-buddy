@@ -1,0 +1,1 @@
+export const calculatePercentage = (amount: number, percentage: number = 10): number => (amount / 100) * percentage;
